@@ -22,12 +22,12 @@
 
 <script lang="ts">
 import {defineComponent} from '@vue/composition-api';
-import psAccountsVue from 'prestashop_accounts_vue_components';
 
 export default defineComponent({
   name: 'PsAccountsContainer',
   mounted() {
-    psAccountsVue.init();
+    // @ts-ignore
+    window.psaccountsVue.init();
   },
 });
 </script>
